@@ -10,7 +10,7 @@ var Task = function(task){
 
 Task.getAllCoins = function (result) {
     console.log("Got to getAllCoins");
-        sql.query("Select * from coins", function (err, res) {
+        sql.query("Select * from coins.coins", function (err, res) {
 
                 if(err) {
                     console.log("error: ", err);
